@@ -8,6 +8,14 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
+     * unique para que no se repita la info. 
+     * timestamp verifica la fecha del correo electronico, nullable , especifica que puede ir vacio
+     * rememmbertoken -- permite que el usuario permanezca activo , no se le cierra la seccion
+     * ir a la documentacion de laravel de migraciones para ver todos los tipos. 
+     * 
+     * dos metodos UP - 
+     * DOWN- revertir tosdos los cambios que tengamoss en UP, eliminar
+     * estos son para tener una especie de ctrl +z
      */
     public function up(): void
     {
