@@ -1,7 +1,7 @@
-@extends('layout.main')
+@extends('layout.paquete')
 
 @section('content')
 
-<h1> Categorias </h1>
+
 
 @endsection

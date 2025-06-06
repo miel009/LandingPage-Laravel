@@ -10,14 +10,14 @@
     <div class= "container">
         <div class="row">
             @yield('content')
-        </div>      
+        </div>       
     </div>
 
-    <div class="container"> 
+    <div class= "container">
     <div class="row">
-        @include('include.destino')
+        @include('include.paquete')
     </div>      
-    </div>
+    </div>   
     
 
     

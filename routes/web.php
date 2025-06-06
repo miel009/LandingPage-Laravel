@@ -27,8 +27,8 @@ Route::get('/destino', function() {
     
 })->name('destino');
 
-Route::get('/contacto', function() {
-    return view('contacto');
+Route::get('/reserva', function() {
+    return view('reserva');
     
-})->name('contacto');
+})->name('reserva');
 
