@@ -1,0 +1,70 @@
+<h1 id="h1-destinos">¡Vive Experiencias Inolvidables!</h1>
+<div class="containerGalery">
+    <div class="slider-wrapper">
+        <button id="prev-slide" class="slide-button material-symbols-rounded bi bi-caret-left"></button>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="../static/img/naturaleza.jpg" alt="">
+                <div class="text-overlay">Naturaleza y Turismo</div>
+            </div>
+            <div class="grid-item">
+                <img src="../static/img/gastronomia.webp" alt="">
+                <div class="text-overlay">Gastronomía</div>
+            </div>
+            <div class="grid-item">
+                <img src="../static/img/cultura.jpg" alt="">
+                <div class="text-overlay">Cultura</div>
+            </div>
+            <div class="grid-item">
+                <img src="../static/img/playas.webp" alt="">
+                <div class="text-overlay">Playas</div>
+            </div>
+        </div>
+        
+        <button id="next-slide" class="slide-button material-symbols-rounded bi bi-caret-right"></button>
+    </div>
+    <div class="slider-scrollbar">
+        <div class="scrollbar-track">
+            <div class="scrollbar-thumb"></div>
+        </div>
+    </div>
+</div>
+
+
+<h2 id="h2-destinos">Conoce los Destinos</h2>
+<div class="container-destinos">
+<div class="card">
+    <img src="../static/img/cordoba.jpg" alt="bahiaHawai">
+    <div class="text">Córdoba</div>
+    Layout 
+</div>
+<div class="card">
+    <img src="../static/img/bariloche.jpg" alt="bahiaHawai">
+    <div class="text">Bariloche</div>
+    <div class="enlace"><a href="{{ url('dashboard.dashboardpaquetes') }}">Ver Más+</a></div>
+</div>
+<div class="card">
+    <img src="../static/img/talampaya_laRioja.jpg" alt="bahiaHawai">
+    <div class="text">La Rioja</div>
+    <div class="enlace"><a href="{{ url ('dashboard.dashboardpaquetes') }}">Ver Más+</a></div>
+</div>
+</div>
+
+
+<div class="container-destinos">
+<div class="card">
+    <img src="../static/img/bahiaHawai.jpg" alt="bahiaHawai">
+    <div class="text">Hawai</div>
+    <div class="enlace"><a href="{{ url('dashboard.dashboardpaquetes') }}">Ver Más+</a></div>
+</div>
+<div class="card">
+    <img src="../static/img/newYork.jpg" alt="bahiaHawai">
+    <div class="text">New York</div>
+    <div class="enlace"><a href="{{ url('dashboard.dashboardpaquetes') }}">Ver Más+</a></div>
+</div>
+<div class="card">
+    <img src="../static/img/Mauna_Kea.jpg" alt="bahiaHawai">
+    <div class="text">Mauna Kea</div>
+    <div class="enlace"><a href="{{ url('dashboard.dashboardpaquetes') }}">Ver Más+</a></div>
+</div>
+</div>

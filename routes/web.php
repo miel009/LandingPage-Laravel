@@ -27,4 +27,3 @@ Route::get('/contacto', function () {
     return view('contacto');
 
 })->name('contacto');
-
