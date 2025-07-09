@@ -3,7 +3,7 @@
 @section('content')
 
 
-<h1> Categorias </h1>
+<h1> Contacto</h1>
 
 
 

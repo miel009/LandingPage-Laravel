@@ -5,30 +5,26 @@ use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PaqueteController;
+use App\Http\Controllers\ReservaController;
+use App\Models\PaqueteTuristico;
 
+Route::get('/', function () {
+    return view('home'); // vista princ de inicio
 
-//Route::get('/', HomeController::class);
+})->name('/');
 
+Route::get('/paquetes', [PaqueteController::class, 'index'])->name('paquetes.index');
 
-//Route::get('/posts', [PostController::class,  'index']);
-Route::get('/', function() {
-    return view('home');
-    
-    })->name('/');
+// ver formulario para reservar 
+Route::get('/paquetes/{paquete}/reservar', [PaqueteController::class, 'reservar'])->name('paquetes.reservar');
 
-Route::get('/paquete', function() {
-    return view('paquete');
-    
-})->name('paquete');    
-     
+Route::get('/reserva/{paquete}/comprobante', [ReservaController::class, 'comprobante'])->name('reserva.comprobante');
+// -->form de reserva
+Route::post('/reservar', [ReservaController::class, 'store'])->name('reservas.store');
 
-Route::get('/destino', function() {
-    return view('destino');
-    
-})->name('destino');
-
-Route::get('/contacto', function() {
+Route::get('/contacto', function () {
     return view('contacto');
-    
+
 })->name('contacto');
 

@@ -13,12 +13,6 @@
         </div>      
     </div>
 
-    <div class= "container">
-    <div class="row">
-        @include('include.main')
-    </div>      
-    </div>
-    
 
     
     <div class="row">
