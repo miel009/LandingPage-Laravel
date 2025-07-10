@@ -13,10 +13,10 @@ class Reserva extends Model
         'email',
         'telefono',
         'cantidad_personas',
-        'mensaje', // 👈 AÑADIDO
+        'mensaje', 
     ];
 
-    // Relaciones (opcional)
+    
     public function paquete()
     {
         return $this->belongsTo(PaqueteTuristico::class, 'paquete_id');

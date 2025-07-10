@@ -1,11 +1,19 @@
 @extends('layout.main')
+@php
+    use Illuminate\Support\Str;
+@endphp
+
 @section('content')
 
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-14 mt-14">
     @foreach ($paquetes as $paquete)
         <div class="border p-4 rounded shadow h-full flex flex-col">
-            <img src="{{ asset('storage/' . $paquete->imagen) }}" alt="{{ $paquete->titulo }}" class="w-full h-40 object-cover rounded mb-4">
-            <h2 class="text-lg font-bold mb-2">{{ $paquete->titulo }}</h2>
+        <!-- verifica si img viene de bd o assets, y si es valida  -->
+  @if($paquete->imagen_url)
+            <img src="{{ $paquete->imagen_url }}" alt="{{ $paquete->titulo }}" class="w-full h-40 object-cover rounded mb-4">
+        @else
+            <img src="{{ asset('assets/img/.jpg') }}" alt="" class="w-full h-40 object-cover rounded mb-4">
+        @endif         <h2 class="text-lg font-bold mb-2">{{ $paquete->titulo }}</h2>
             <p class="mb-2 flex-grow">{{ $paquete->descripcion }}</p>
             <p class="mb-4"><strong>Precio:</strong> ${{ $paquete->precio }}</p>
             <div class="mt-auto">
