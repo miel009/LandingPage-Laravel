@@ -29,7 +29,5 @@
            
         </ul>
     </nav>
-    <div id="list" onclick="toggleMenu()">
-        <i class="bi bi-list"></i>
-    </div>
+   
 </div>

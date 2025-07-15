@@ -1,142 +1,129 @@
 @extends('layout.main')
 
+
+@section('fullwidth')
+   <div style="width: 100vw; max-width: 200%; overflow-x: hidden; margin-left: calc(-50vw + 50%); position: relative;">
+    
+    
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{ asset('assets/img/bariloche.jpg') }}" alt="Promociones" style="width: 100%; height: 300px; object-fit: cover;">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('assets/img/cordoba.jpg') }}" alt="Promociones" style="width: 100%; height: 300px; object-fit: cover;">
+            </div>
+            <div class="carousel-item">
+               <img src="{{ asset('assets/img/Pao_Azucar.jpg') }}" alt="Promociones" style="width: 100%; height: 300px; object-fit: cover;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+
+
+@endsection
+
 @section('content')
 
 
-<main>
+   <div class="container mt-0 p-3 mb-6">
+    <p class="parrafo-index">
+        Somos un grupo fundado en 2024 en permanente expansión y crecimiento.
 
-    <div class="cards-container">
-        <h2 class="descripcion"> Quienes somos </h2>
-        <p class="parrafo-index">
-            Somos un grupo fundado en 2024 en permanente expansión y crecimiento.
+        Somos un sitio de viajes, encontrando los mejores resultados, hoteles y paquetes.
 
-            Somos un sitio de viajes, encontrando los mejores resultados, hoteles y paquetes.
+        Gracias a esto, somos marca líder en Latinoamérica, jóven y flexible, y principal influencer de turismo
+        para
+        la inspiración, búsqueda y compra de un nuevo viaje.
+        <br>
+        Nuestro objetivo es que puedas encontrar el viaje de tus sueños, y que puedas disfrutarlo al máximo.
 
-            Gracias a esto, somos marca líder en Latinoamérica, jóven y flexible, y principal influencer de turismo
-            para
-            la inspiración, búsqueda y compra de un nuevo viaje.
-        </p>
-        <p class="p-seguinos">
-            Lo que somos, es lo que hacemos: Seguinos en nuestras redes o registrate mediante nuestro formulario de contacto y recibí las mejores ofertas en hoteles, aereos, paquetes y más.
-        </p>
-          
-       
-    <h3 class="preg"> Preguntas frecuentes </h3>
-    </div>
-
+    </p>
+   
      <!-- pregs frecuentes-->
-     <div class="containerPreg md-6">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="accordion" id="accordionExample1">
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="headingOne1">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="false" aria-controls="collapseOne1">
-                                ¿Que canales de comunicacion tiene TravelNine?
-                            </button>
-                        </h3>
-                        <div id="collapseOne1" class="accordion-collapse collapse" aria-labelledby="headingOne1" data-bs-parent="#accordionExample1">
-                            <div class="accordion-body">
-                                Nuestro canal de comunicacion por excelencia es via formulario de contacto, y posteriormente llamado para una atencion personalizada. Pero tambien puede encontrarnos por Instagram y Facebook como NineTravel.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="headingTwo1">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
-                                ¿Qué opciones de alojamientos se pueden encontrar en TravelNine?
-                            </button>
-                        </h3>
-                        <div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingTwo1" data-bs-parent="#accordionExample1">
-                            <div class="accordion-body">
-                                Contamos con variedad de opciones para una experiencia inolvidable, desde hoteles premium a hoteles lowcost y apartamentos para familias o para quienes buscan estadías largas y prefieren facilidades en espacios de laundry y cocinas equipadas, como también hostales.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="headingThree1">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
-                                Puedo cancelar o modificar mi reserva a través de la pagina web?
-                            </button>
-                        </h3>
-                        <div id="collapseThree1" class="accordion-collapse collapse" aria-labelledby="headingThree1" data-bs-parent="#accordionExample1">
-                            <div class="accordion-body">
-                                No. Debés llamarnos o dejarnos información mediante el formulario de contacto asi te llamamos y gestinamos la cancelacion.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="headingFour1">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour1" aria-expanded="false" aria-controls="collapseFour1">
-                                ¿Es posible hacer consultas telefónicas con TravelNine?
-                            </button>
-                        </h3>
-                        <div id="collapseFour1" class="accordion-collapse collapse" aria-labelledby="headingFour1" data-bs-parent="#accordionExample1">
-                            <div class="accordion-body">
-                                Si, a traves de los datos que nos deje en el formulario el sector de ventas se comunica directamente via telefonia para ofrecerle opciones personalizadas dependiendo de sus necesidaes.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="accordion" id="accordionExample2">
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="headingOne2">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="false" aria-controls="collapseOne2">
-                                ¿Que incluye los paquetes?
-                            </button>
-                        </h3>
-                        <div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne2" data-bs-parent="#accordionExample2">
-                            <div class="accordion-body">
-                                Incluimos transporte aéreo y traslados al hotel, y si es necesario transportes secundarios para hacer los tours, dependiendo de la actividad que se realice.
-                                Para más detalles e información no dude en consultarnos mediante el formulario de contacto. ¡Gracias!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="headingTwo2">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
-                                ¿Hay opciones de turismo accesible?
-                            </button>
-                        </h3>
-                        <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2" data-bs-parent="#accordionExample2">
-                            <div class="accordion-body">
-                                Sí, contamos con paquetes personalizados para una mejor experiencia.
-                                Invitamos a consultarnos para más información mediante el formulario de contacto. ¡Gracias!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="headingThree2">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
-                                ¿Cómo puedo enterarme de las mejores ofertas?
-                            </button>
-                        </h3>
-                        <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree2" data-bs-parent="#accordionExample2">
-                            <div class="accordion-body">
-                                Seguinos en nuestras redes sociales para recibir alertas de vuelos baratos y hoteles, entre otras novedades
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header" id="headingFour2">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour2" aria-expanded="false" aria-controls="collapseFour2">
-                                ¿Se puede comprar a través de la pagina?
-                            </button>
-                        </h3>
-                        <div id="collapseFour2" class="accordion-collapse collapse" aria-labelledby="headingFour2" data-bs-parent="#accordionExample2">
-                            <div class="accordion-body">
-                                No, funciona como comparador de precios. Se gestiona la reserva mediante llamada directa, nos dejan sus datos y la consulta por el formulario de contacto, y en la brevedad nos comunicamos para ofrecerle una experiencia personalizada.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+      <h3 class="preg"> Preguntas frecuentes </h3>
+      
+    <div class="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-4 bg-white/20 backdrop-blur rounded-lg">
+    
+    <details class="p-4 border border-gray-300 rounded-lg bg-white/30 backdrop-blur shadow transition duration-300 hover:shadow-md">
+        <summary class="font-semibold cursor-pointer">¿Qué canales de comunicación tiene TravelNine?</summary>
+        <p class="mt-2 text-sm text-gray-800">
+            Nuestro canal principal es el formulario de contacto. También estamos en Instagram y Facebook como NineTravel.
+        </p>
+    </details>
+
+    <details class="p-4 border border-gray-300 rounded-lg bg-white/30 backdrop-blur shadow transition duration-300 hover:shadow-md">
+        <summary class="font-semibold cursor-pointer">¿Qué opciones de alojamientos hay?</summary>
+        <p class="mt-2 text-sm text-gray-800">
+            Desde hoteles premium a hostales y departamentos familiares con cocinas equipadas.
+        </p>
+    </details>
+
+    <details class="p-4 border border-gray-300 rounded-lg bg-white/30 backdrop-blur shadow transition duration-300 hover:shadow-md">
+        <summary class="font-semibold cursor-pointer">¿Puedo cancelar/modificar mi reserva desde la web?</summary>
+        <p class="mt-2 text-sm text-gray-800">
+            No. Deberás completar el formulario para que te llamemos y gestionemos el cambio.
+        </p>
+    </details>
+
+    <details class="p-4 border border-gray-300 rounded-lg bg-white/30 backdrop-blur shadow transition duration-300 hover:shadow-md">
+        <summary class="font-semibold cursor-pointer">¿Puedo hacer consultas telefónicas?</summary>
+        <p class="mt-2 text-sm text-gray-800">
+            Sí, te llamamos luego de recibir tus datos por el formulario para atención personalizada.
+        </p>
+    </details>
+
+    <details class="p-4 border border-gray-300 rounded-lg bg-white/30 backdrop-blur shadow transition duration-300 hover:shadow-md">
+        <summary class="font-semibold cursor-pointer">¿Qué incluyen los paquetes?</summary>
+        <p class="mt-2 text-sm text-gray-800">
+            Transporte aéreo, traslados al hotel y transportes secundarios según la actividad.
+        </p>
+    </details>
+
+    <details class="p-4 border border-gray-300 rounded-lg bg-white/30 backdrop-blur shadow transition duration-300 hover:shadow-md">
+        <summary class="font-semibold cursor-pointer">¿Hay turismo accesible?</summary>
+        <p class="mt-2 text-sm text-gray-800">
+            Sí. Contamos con opciones personalizadas. Consultanos vía formulario.
+        </p>
+    </details>
+
+    <details class="p-4 border border-gray-300 rounded-lg bg-white/30 backdrop-blur shadow transition duration-300 hover:shadow-md">
+        <summary class="font-semibold cursor-pointer">¿Cómo enterarme de las mejores ofertas?</summary>
+        <p class="mt-2 text-sm text-gray-800">
+            Seguinos en redes sociales para recibir alertas y novedades.
+        </p>
+    </details>
+
+    <details class="p-4 border border-gray-300 rounded-lg bg-white/30 backdrop-blur shadow transition duration-300 hover:shadow-md">
+        <summary class="font-semibold cursor-pointer">¿Se puede comprar desde la página?</summary>
+        <p class="mt-2 text-sm text-gray-800">
+            No. Funcionamos como comparador de precios. Te llamamos luego del formulario.
+        </p>
+    </details>
+</div>
+
+<!-- termina pregs frecuentes-->
 <!-- card noticias  -->   
 <h3 class="preg"> Noticias </h3>
+
 <div class="container my-5">
     <div class="row">
         <div class="col-md-12 mb-4">
@@ -173,8 +160,9 @@
         </div>
     
     </div>
+</div> <!-- termina card noticias  -->
 </div>
+ <!-- breve descripcion, preguntas frecuentes y cards  -->
 
-</main>
 
 @endsection

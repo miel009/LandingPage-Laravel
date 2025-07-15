@@ -6,9 +6,9 @@
    <div style="width: 100vw; max-width: 200%; overflow-x: hidden; margin-left: calc(-50vw + 50%); position: relative;">
     <img src="{{ asset('assets/img/paq.webp') }}" alt="Promociones" style="width: 100%; height: 300px; object-fit: cover;">
     
-</div>
-
     </div>
+
+    
 @endsection
 @section('content')
 
