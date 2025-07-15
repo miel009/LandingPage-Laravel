@@ -1,26 +1,16 @@
-@include('include.head') 
-  <body>
+@include('include.head')
+<body style="min-height: 100vh; display: flex; flex-direction: column;">
 
-    <div class= "container">
-        <div class="row">
-            @include('include.nav')
-        </div>      
-    </div>
+    @include('include.nav')
 
-    <div class= "container">
-        <div class="row">
-            @yield('content')
-        </div>      
-    </div>
+    <main style="flex: 1;">
+        @yield('fullwidth')
 
+        @yield('content')
+    </main>
 
-    
-    <div class="row">
-            @include('include.footer')
-    </div>      
+    @include('include.footer')
 
-
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>

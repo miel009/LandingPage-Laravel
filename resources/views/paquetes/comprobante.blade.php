@@ -1,4 +1,5 @@
 @extends('layout.main')
+
 @section('content')
 
 <div class="max-w-md mx-auto p-4 border rounded shadow">

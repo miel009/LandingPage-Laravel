@@ -10,6 +10,8 @@
 
 }
 
+
+
 /* prueba */
 #promo-video {
     position: relative;
@@ -129,18 +131,12 @@ main{
     object-fit: cover;
 }
 
-.horizontal-card .card-body {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    height: 100%; 
-}
 
 .card-title {
     font-size: 1.25rem;
     font-weight: bold;
 }
+
 
 .card-text {
     font-size: 1rem;
@@ -249,9 +245,10 @@ h1{
 }
 
 body {
-    margin: 0px;
     background-color: var(--four-color);
     color: var(--five-color);
+    overflow-x: hidden;
+    margin: 0;
 }
 header, main, footer {
     border: 2px solid var(--four-color);
@@ -355,28 +352,43 @@ footer a:hover {
     }
 
     /*FOOTER*/
-    footer i {
-        margin-top: 0px;
-        margin-right: 15px;
-        text-align: center;
-    }
+footer {
+    background-color: var(--bg-color); /* color claro, opcional */
+    padding: 2rem 1rem;
+    margin-top: auto;
+}
 
-    .conteiner-footer {
-        margin-top: 1rem;
-        margin-left: 5%;
-    }
+footer i {
+    margin-right: 10px;
+    text-align: center;
+    font-size: 18px;
+}
 
-    .conteiner-footer .pie {
-        margin: 0px;
-        padding: 0px;
-        display: flex;
-        align-items: center;
-        margin-bottom: 14px;
-    }
+footer p {
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+}
 
-    .conteiner-footer i, footer p{
-        font-size: 25px;
-    }
+.conteiner-footer {
+    margin-left: 4%;
+    margin-bottom: 1.5rem;
+}
+
+.conteiner-footer .pie {
+    display: flex;
+    align-items: center;
+}
+
+.icono-foter i {
+    font-size: 20px;
+    margin: 0 8px;
+    color: #ede7e7;
+    transition: color 0.3s;
+}
+
+.icono-foter i:hover {
+    color: #007bff;
+}
 
 
 }
@@ -454,29 +466,6 @@ footer a:hover {
 
     nav li div {
         display: inline;
-    }
-
-    #menu_list {
-        position: absolute;
-        width: 100%;
-        max-height: 0px;
-        top: 0;
-        z-index: 1;
-        margin-top: 120px;
-        background-color: var(--four-color);
-        overflow: hidden;
-        transition: max-height 0.5s;
-    }
-
-    #menu_list.open-menu {
-        max-height: 330px;
-    }
-
-    #menu_list a {
-        color: black;
-        display: block;
-        padding: 20px;
-        font-size: 30px;
     }
 
     /*FOOTER*/

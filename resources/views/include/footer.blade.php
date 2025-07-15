@@ -15,7 +15,7 @@
         </p>
     </div>
 
-    <div class="text-center">
+    <div class="text-center mb-2">
         <p>Seguinos para mas novedades! </p>
         <ul class="list-unstyled list-inline">
             <li>
@@ -40,7 +40,7 @@
         </ul>
     </div>
 
-    <div class="text-center">
+    <div class="text-center small text-muted">
         <p> &copy; 2024 NineTravel Todos los derechos reservados. </p>
     </div>
 

@@ -27,3 +27,7 @@ Route::get('/contacto', function () {
     return view('contacto');
 
 })->name('contacto');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
