@@ -41,7 +41,7 @@
     </div>
 
     <div class="text-center small text-muted">
-        <p> &copy; 2024 NineTravel Todos los derechos reservados. </p>
+        <p class="text-white"> &copy; 2024 NineTravel Todos los derechos reservados. </p>
     </div>
 
 </footer>

@@ -7,6 +7,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PaqueteController;
 use App\Http\Controllers\ReservaController;
+use App\Http\Controllers\ContactoController;
 use App\Models\PaqueteTuristico;
 
 Route::get('/', function () {
@@ -25,8 +26,10 @@ Route::post('/reservar', [ReservaController::class, 'store'])->name('reservas.st
 
 Route::get('/contacto', function () {
     return view('contacto');
+    })->name('contacto');
+    
+Route::post('/contacto', [ContactoController::class, 'store'])->name('contacto.store');
 
-})->name('contacto');
 
 Auth::routes();
 
